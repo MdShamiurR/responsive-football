@@ -16,7 +16,7 @@
     #2D25A0 ;
     
     height: 677px;
-    animation: change 1s ease-in-out .5s infinite alternate ;
+    animation: change 2.5s ease-in-out .5s infinite alternate ;
     animation-play-state: running;
     
     
@@ -73,12 +73,29 @@
     width: 556.01px;
     height: 438px;
 }
+
+/* @keyframes change2{
+    from{
+        
+        right: -0px ;
+    }
+    to{
+        
+        left: -580px ;
+        
+    }
+} */
 .banner{
     position: relative;
     transition: transform 1.5s ease-out;
+
+    
     
 }
 .sec1display:hover .banner{
     transform: translate(-580px, -100px);
+
+    /* animation: change2 1.5s ease-in .3s 1 alternate ;
+    animation-play-state: running; */
     
 }
