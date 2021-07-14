@@ -1,6 +1,8 @@
 /* Google poppins font  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+/* Common Part  */
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -24,9 +26,11 @@ body{
     height: 677px;
     animation: change 2.5s ease-in-out .5s infinite alternate ;
     animation-play-state: running;
-    
-    
+       
 }
+
+/* First Section's tools */
+
 .sec1display{
     padding-left: 500px ;
     padding-top: 100px;
@@ -35,33 +39,26 @@ body{
     padding-top: 100px;
 }
 
+/* Heading File  */
+
 .heading{
     font-size: 64px ;
     color: white;
     font-weight: 700;
 }
-.watch{
+
+/* Button tools */
+
+.watch a{
+    text-decoration: none;
     background-color: 
     #E02C6D;
-    width: 168px;
-    height: 44px;
-    display: flex;
-    align-items: center;
+    padding: 10px 40px;
     border-radius: 5px;
-    
+    color: white;
+
 }
-.watchicon{
-    /* margin: 10px 24px 10 24px; */
-    margin-left: 25px;
-}
-.watchnow{
-    font-size: 16px;
-    color: #FFFFFF;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
-    
-}
+
 
 .fa-long-arrow-alt-right{
     width: 24px;
@@ -81,17 +78,7 @@ body{
     height: 438px;
 }
 
-/* @keyframes change2{
-    from{
-        
-        right: -0px ;
-    }
-    to{
-        
-        left: -580px ;
-        
-    }
-} */
+
 .banner{
     position: relative;
     transition: transform 1.5s ease-out;
@@ -149,6 +136,7 @@ font-size: 28px;
 }
 
 /* logopart */
+
 .logo-container{
     /* position: absolute; */
     /* display: flex; */
@@ -156,6 +144,7 @@ font-size: 28px;
 
     width: 483.87px;
     height: 213px;
+    padding-top: 80px;
 
 }
 
@@ -180,6 +169,7 @@ font-size: 28px;
 
 /* bonus part  */
 
+/* photo-album  */
 
 
 .album-container{
@@ -248,3 +238,54 @@ font-size: 28px;
 
 /* Responsive part  */
 
+@media only screen and (max-Width:688px){
+    .backgroundcolor{
+        width: 100%;
+       
+        
+        
+    }
+    .players{
+        padding-left: 1200px;
+        padding-top: 200px;
+    }
+    header .heading{
+        padding-bottom: 70px;
+        padding-right: 80px;
+    }
+    .copa-america , .players , .sec1display , .container ,.photo-album {
+        
+    grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    .copa-america , .players , .sec1display{
+        
+        flex-direction: column;
+        }
+
+
+        .sec1display{
+            justify-content: space-around;
+        } 
+}
+
+/* for ipad  */
+@media only screen and (min-width:688px)and (max-width:992px) {
+   
+    .backgroundcolor{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: space-between;
+        flex-direction: row;
+    }
+
+    .copa-america , .players , .sec1display , .container ,.photo-album {
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+        }
+}
