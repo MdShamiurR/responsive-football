@@ -47,6 +47,7 @@ body{
     height: 44px;
     display: flex;
     align-items: center;
+    border-radius: 5px;
     
 }
 .watchicon{
@@ -150,7 +151,7 @@ font-size: 28px;
 .logo-container{
     position: absolute;
     display: flex;
-    bottom: -3400px;
+    bottom: -4000px;
 
     width: 483.87px;
     height: 213px;
@@ -194,6 +195,7 @@ font-size: 28px;
 
 .photo-frame {
     width: 300px;
+    height: 300px;
 
     border: 3px solid lightslategrey;
     border-radius: 10px;
@@ -215,6 +217,7 @@ font-size: 28px;
 
 .photo-frame img {
     width: 300px;
+    
     border-radius: 7px;
 }
 
@@ -229,7 +232,7 @@ font-size: 28px;
 
 .photo-details h2 {
     color: lightblue;
-    background-color: lightpink;
+    background-color: rgb(131, 128, 128);
     text-align: center;
 }
 
@@ -238,4 +241,6 @@ font-size: 28px;
 
     transition: transform 1s;
 }
+
+/* Responsive part  */
 
