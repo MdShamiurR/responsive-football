@@ -2,12 +2,22 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+@keyframes change{
+    from{
+        background-color: #2D25A0 ;
+    }
+    to{
+        background-color: #e9e9ec ;
+    }
+}
 
 .backgroundcolor{
     background-color: 
     #2D25A0 ;
     
     height: 677px;
+    animation: change 1s ease-in-out .5s infinite alternate ;
+    animation-play-state: running;
     
     
 }
@@ -42,14 +52,20 @@
     color: #FFFFFF;
     font-weight: 500;
     line-height: 24px;
+    text-decoration: none;
+    
 }
 
 .fa-long-arrow-alt-right{
     width: 24px;
     height: 24px;
     color: white;
-    margin-left: 12px;
-     
+    margin-left: 6px;
+    
+             
+}
+.fa-long-arrow-alt-right{
+    
 }
 
 /* banner */
@@ -58,5 +74,11 @@
     height: 438px;
 }
 .banner{
+    position: relative;
+    transition: transform 1.5s ease-out;
+    
+}
+.sec1display:hover .banner{
+    transform: translate(-580px, -100px);
     
 }
