@@ -150,26 +150,14 @@ font-size: 28px;
 .logo-container{
     position: absolute;
     display: flex;
-    bottom: -2100px;
+    bottom: -3400px;
 
     width: 483.87px;
     height: 213px;
 
 }
 
-/* .logo-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
 
-    position: absolute;
-    width: 483.87px;
-    height: 213px;
-    left: 475px;
-    top: 3474px;
-} */
 
 .football-image1 img{
     width: 262.1px;
@@ -186,5 +174,68 @@ font-size: 28px;
 
 .copyright p{
     font-size: 18px;
+}
+
+/* bonus part  */
+
+
+
+
+
+.photo-album {
+    /* display: flex;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-row-gap: 30px;
+
+}
+
+.photo-frame {
+    width: 300px;
+
+    border: 3px solid lightslategrey;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 2.5px;
+
+
+
+
+}
+
+.photo-frame:hover .photo-details {
+
+    display: block;
+    color: lightslategrey;
+    background-color: rgba(32, 178, 171, 0.2);
+}
+
+.photo-frame img {
+    width: 300px;
+    border-radius: 7px;
+}
+
+.photo-details {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    display: none;
+
+
+}
+
+.photo-details h2 {
+    color: lightblue;
+    background-color: lightpink;
+    text-align: center;
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.5) rotate(30deg);
+
+    transition: transform 1s;
 }
 
